@@ -10,7 +10,7 @@
 * Error Log file is created as /tmp/script.log
 ```
 Configuration file : /etc/nginx/sites-enabled/hostname 
-Root Directory     : /var/www/hostname
+Root Directory     : /usr/share/nginx/hostname
 (Where hostname may be ubuntu.example.com, linux.example.com) 
 
 database-user      : root
@@ -20,14 +20,14 @@ database-name      : Provided by user
 For root user
 Usage:
 ```
-bash script.sh
-./script.sh
+bash wordpress.sh
+./wordpress.sh
 ```
 For normal user
 Usage: 
 ```
-sudo bash script.sh
-sudo ./script.sh
+sudo bash wordpress.sh
+sudo ./wordpress.sh
 ```
 * Please make sure no other installations are running.
 * Make sure Internet is up and running.
