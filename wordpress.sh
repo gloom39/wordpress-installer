@@ -154,6 +154,7 @@ chmod -R 755 /usr/share/nginx/$domain
 wp core install --title="$site" --admin_user="$admin" --admin_password="$pass2" --admin_email="$email" --allow-root --url="http://$domain" 
 rm -rf /tmp/latest/
 rm /tmp/latest.zip
+service apache2 stop
 service nginx restart
 service php7.0-fpm restart
 echo -e "Setup complete. Open $domain in browser.\n"
